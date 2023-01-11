@@ -1,0 +1,4 @@
+Connect to application code
+{
+	mongodb+srv://clerprem:clerprempassword@cluster0.xrxndxj.mongodb.net/?retryWrites=true&w=majority
+}

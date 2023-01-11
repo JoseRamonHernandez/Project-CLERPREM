@@ -1,0 +1,81 @@
+DB
+{
+	users
+	{
+		ID,
+		name,
+		lastname,
+		date of birthday,
+		email,
+		username,
+		password,
+		area,
+		project,
+		date of register,
+		phone number,
+		emergency phone number,
+		type of user,
+		photo,
+		completed courses
+		[
+			{
+				name of course,
+				stage,
+				score
+			}
+		]
+
+	},
+
+	courses
+	{
+		ID
+		name of course,
+		area of course,
+		stage,
+		final score,
+		status,
+		material
+		[
+			{
+				"DOCUMENTO" ó "LINK"
+			}
+		],
+		images
+		[
+			{
+				"LINK"
+			}
+		]
+	},
+
+	questions
+	{
+		ID of question,
+		ID of course,
+		question,
+		answers
+		[
+			{
+				text
+			}
+		],
+		correct_answer
+	},
+
+	payroll
+	{	
+		ID
+		collaborator name,
+		url to drive
+	},
+
+	vacancies
+	{
+		ID
+		vacancies name,
+		quantity,
+		image,
+		specifications
+	}
+}
