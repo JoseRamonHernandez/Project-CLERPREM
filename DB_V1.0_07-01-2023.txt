@@ -1,4 +1,4 @@
-DB
+DB on MongoDB ATLAS 
 {
 	users
 	{
@@ -19,6 +19,7 @@ DB
 		completed courses
 		[
 			{
+				ID of course
 				name of course,
 				stage,
 				score
@@ -34,7 +35,6 @@ DB
 		area of course,
 		stage,
 		final score,
-		status,
 		material
 		[
 			{
@@ -74,8 +74,25 @@ DB
 	{
 		ID
 		vacancies name,
-		quantity,
+		quantity to vacancies,
 		image,
 		specifications
+	},
+
+	events
+	{
+		ID,
+		title,
+		subtitle (for who),
+		text,
+		date and time,
+		place
+	},
+
+	alerts
+	{
+		ID,
+		title,
+		text
 	}
 }
