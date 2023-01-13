@@ -1,0 +1,99 @@
+DB on MongoDB ATLAS 
+{
+	users
+	{
+		ID,
+		name,
+		lastname,
+		date of birthday,
+		email,
+		username,
+		password,
+		area,
+		project,
+		date of register,
+		phone number,
+		emergency phone number,
+		type of user,
+		photo,
+		completed courses
+		[
+			{
+				ID of course
+				name of course,
+				stage,
+				score
+			}
+		]
+
+	},
+
+	courses
+	{
+		ID
+		name of course,
+		area of course,
+		stage,
+		final score,
+		material
+		[
+			{
+				"DOCUMENTO" ó "LINK"
+			}
+		],
+		images
+		[
+			{
+				"LINK"
+			}
+		]
+	},
+
+	questions
+	{
+		ID of question,
+		ID of course,
+		question,
+		answers
+		[
+			{
+				text
+			}
+		],
+		correct_answer
+	},
+
+	payroll
+	{	
+		ID
+		collaborator name,
+		url to drive,
+		date
+	},
+
+	vacancies
+	{
+		ID
+		vacancies name,
+		quantity to vacancies,
+		image,
+		specifications
+	},
+
+	events
+	{
+		ID,
+		title,
+		subtitle (for who),
+		text,
+		date and time,
+		place
+	},
+
+	alerts
+	{
+		ID,
+		title,
+		text
+	}
+}
